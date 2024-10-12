@@ -1,0 +1,11 @@
+<div>
+    <div class="grid grid-cols-12 sm:grid-cols-6 text-center gap-4">
+        <div *ngFor="let gif of gifs" class="mb-2 bg-slate-600 rounded">
+            <img [src]="gif.images.downsized_medium.url" [alt]="gif.title">
+
+            <div class="text-white">
+                <p>{{gif.title}}</p>
+            </div>
+        </div>
+    </div>
+</div>
